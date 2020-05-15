@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+   width: 320px;
+   margin: 0 auto; 
+}
+
+header {
+    background-color: yellow;
+}
+
+.header-nav {
+    display: flex;
+    flex-flow: column;
+}
+
+
+.logo-wrapper {
+    display: flex;
+    flex-flow: row;
+    margin-left: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.logo:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: relative;
+    background-image: url("./image/networking.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.btn-login,
+.btn-sign-in {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 8%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    flex-flow: column;
+    margin: 30px auto;
+}
+
+.main-section,
+.main-section-title,
+.main-section-list {
+    padding-top: 15px;
+}
+
+.main-section-title,
+.g-cat-title {
+    color: wheat;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main-list-item {
+    margin: 10px;
+    font-size: large;
+    padding: 25px;
+    color: wheat;
+}
+
+main {
+    background-image: url("./image/3d-modern-abstract-gaming-dark-blue-background_52659-181.jpg");
+}
+
+.main-list-item:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    left: 19%;
+    background-image: url("./image/stars.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.g-cat-title {
+    padding-bottom: 36px;
+}
+
+.game-list-item {
+    text-align: center;
+    margin: 30px;
+    height: 110px;
+    width: 110px;
+    color: wheat;
+    border-radius: 2%;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid rgb(131, 42, 131);
+    padding: 6px;
+    margin-bottom: 50px;
+}
+
+.game-list-item::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    left: 27%;
+    bottom: 38%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.game-list-item:nth-of-type(1)::before {
+    background-image: url("./image/target.png");
+}
+
+.game-list-item:nth-of-type(2)::before {
+    background-image: url("./image/fit.png");
+}
+
+.game-list-item:nth-of-type(3)::before {
+    background-image: url("./image/fit.png");
+}
+
+.game-list-item:nth-of-type(4)::before {
+    background-image: url("./image/fit.png");
+}
+
+.game-list-item:nth-of-type(5)::before {
+    background-image: url("./image/fit.png");
+}
+
+.game-list-item:nth-of-type(6)::before {
+    background-image: url("./image/fit.png");
+}
+
+.s2-desc {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* margin: 10px;
+    padding: 10px; */
+}
+
+.s2-desc-title:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    left: 27%;
+    bottom: 38%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./image/multimedia-option.png);
+}
+
+.s2-desc-list:before {
+    content: "";
+    width: 1px;
+    height: 115px;
+    display: block;
+    position: absolute;
+    left: -18%;
+    bottom: -9%;
+    border: 1px solid rgb(131, 42, 131);
+    background-color: rgb(131, 42, 131);
+}
+
+.s2-desc-list {
+    position: relative;
+}
+
+.s2-desc-item:before {
+    content: "";
+    width: 10px;
+    height: 1px;
+    display: block;
+    position: relative;
+    border: 1px solid black;
+    background-color: black;
+    top: 7%;
+    left: -14%;
+    align-items: center;
+    /* padding-right: 5px; */
+}
+
+.s2-desc-item {
+    position: relative;
+}
+
+.s3-func {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.s3-func-item {
+    position: relative;
+}
+
+.s3-func-item:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    left: 19%;
+    background-image: url("./image/shapes-and-symbols.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -5px;
+    
+    top: 7%;
+    left: -14%;
+}
+
+.s3-func-item {
+    margin: 10px;
+}
+
+.s3-list-title {
+    text-align: center;
+}
+
+.footer-contacts {
+    background-color: rgb(131, 42, 131);
+}
+
+.footer-copyright {
+    background-color: black;
+    color: rgb(131, 42, 131);
+    padding-left: 13px;
+}
