@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
@@ -250,6 +251,95 @@ main {
     text-align: center;
 }
 
+
+.s4 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.ant-carousel {
+    width: auto;
+    position: relative;
+}
+
+.ant-carousel-hider {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width: 320px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ant-carousel-list {
+    padding-top: 72px;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width: auto;
+}
+
+.ant-carousel-element {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 320px;
+    margin: 20px;
+}
+
+.ant-carousel-element img {
+    width: 280px;
+    height: 230px;
+    position: sticky;
+    border: 25px solid wheat;
+}
+
+.ant-carousel-element p {
+    position: relative;
+    padding: 10px 0;
+    padding-left: 30px;
+    color: wheat;
+}
+
+.ant-carousel-element p::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: wheat;
+    left: 1%;
+    top: 39%;
+
+}
+
+div .ant-carousel-arrow-left, div .ant-carousel-arrow-right {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 50%;
+}
+
+div .ant-carousel-arrow-left {
+    display: block;
+    background: url("./image/back.png") no-repeat;
+    left: 15px;
+}
+
+div .ant-carousel-arrow-right {
+    display: block;
+    background: url("./image/next.png") no-repeat;
+    right: 15px;
+}
+
+div .ant-carousel-arrow-left:hover,
+div .ant-carousel-arrow-right:hover {
+    opacity: 1;
+}
+
 .footer-contacts {
     background-color: rgb(131, 42, 131);
 }
@@ -259,3 +349,4 @@ main {
     color: rgb(131, 42, 131);
     padding-left: 13px;
 }
+
