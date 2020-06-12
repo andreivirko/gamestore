@@ -13,8 +13,8 @@ a {
 }
 
 .container {
-   width: 320px;
-   margin: 0 auto; 
+    width: 320px;
+    margin: 0 auto;
 }
 
 header {
@@ -89,6 +89,7 @@ header {
     font-size: large;
     padding: 25px;
     color: wheat;
+    position: relative;
 }
 
 main {
@@ -101,7 +102,7 @@ main {
     height: 20px;
     display: flex;
     position: absolute;
-    left: 19%;
+    left: 0.5%;
     background-image: url("./image/stars.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -204,10 +205,10 @@ main {
     width: 10px;
     height: 1px;
     display: block;
-    position: relative;
+    position: absolute;
     border: 1px solid black;
     background-color: black;
-    top: 7%;
+    top: 38%;
     left: -14%;
     align-items: center;
     /* padding-right: 5px; */
@@ -238,7 +239,7 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: -5px;
-    
+
     top: 7%;
     left: -14%;
 }
@@ -254,7 +255,7 @@ main {
 
 .s4 {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     align-items: center;
 }
 
@@ -314,7 +315,8 @@ main {
 
 }
 
-div .ant-carousel-arrow-left, div .ant-carousel-arrow-right {
+div.ant-carousel-arrow-left,
+div.ant-carousel-arrow-right {
     width: 32px;
     height: 32px;
     position: absolute;
@@ -323,21 +325,39 @@ div .ant-carousel-arrow-left, div .ant-carousel-arrow-right {
     top: 50%;
 }
 
-div .ant-carousel-arrow-left {
+div.ant-carousel-arrow-left {
     display: block;
     background: url("./image/back.png") no-repeat;
     left: 15px;
 }
 
-div .ant-carousel-arrow-right {
+div.ant-carousel-arrow-right {
     display: block;
     background: url("./image/next.png") no-repeat;
     right: 15px;
 }
 
-div .ant-carousel-arrow-left:hover,
-div .ant-carousel-arrow-right:hover {
+div.ant-carousel-arrow-left:hover,
+div.ant-carousel-arrow-right:hover {
     opacity: 1;
+}
+
+div.ant-carousel-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 60px;
+    z-index: 100;
+}
+
+span.ant-dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: wheat;
+    margin: 5px;
 }
 
 .footer-contacts {
@@ -349,4 +369,3 @@ div .ant-carousel-arrow-right:hover {
     color: rgb(131, 42, 131);
     padding-left: 13px;
 }
-
